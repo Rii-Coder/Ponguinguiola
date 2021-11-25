@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Menu">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:columnCount="2"
+            android:rowCount="1">
+
+            <ImageView
+                android:id="@+id/PerfilImg"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center|right"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:clickable="true"
+                android:focusable="true"
+                app:srcCompat="@drawable/user_icon" />
+
+            <ImageView
+                android:id="@+id/SalirImg"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center|right"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:clickable="true"
+                android:focusable="true"
+                app:srcCompat="@drawable/logout" />
+
+        </GridLayout>
+        
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgLoading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@drawable/ponguinguiola_logo"
+        tools:layout_editor_absoluteX="-16dp" />
+
+    <Button
+        android:id="@+id/btnRealizarDonativo"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/round_editext"
+        android:fontFamily="sans-serif-black"
+        android:text="Realizar una donación"
+        android:textColor="@color/black"/>
+    <Button
+        android:id="@+id/btnMisDonaciones"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/round_editext"
+        android:fontFamily="sans-serif-black"
+        android:text="Mis donaciones"
+        android:textColor="@color/black"/>
+    <Button
+        android:id="@+id/btnEstadoCuenta"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/round_editext"
+        android:fontFamily="sans-serif-black"
+        android:text="Generar estado de cuenta"
+        android:textColor="@color/black"/>
+
+</LinearLayout>

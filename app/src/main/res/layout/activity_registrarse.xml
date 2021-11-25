@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".RegistrarseActivity">
+
+    <ImageView
+        android:id="@+id/imgLoading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@drawable/ponguinguiola_logo"
+        tools:layout_editor_absoluteX="-16dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:text="Registrarse"/>
+
+    <EditText
+        android:id="@+id/txtUsuario"
+        android:fontFamily="sans-serif-black"
+        android:layout_width="250dp"
+        android:layout_height="39dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/round_editext"
+        android:textAlignment="center"
+        android:hint="Usuario"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/txtEdad"
+        android:fontFamily="sans-serif-black"
+        android:layout_width="250dp"
+        android:layout_height="39dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/round_editext"
+        android:textAlignment="center"
+        android:hint="Edad"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/contraseña"
+        android:fontFamily="sans-serif-black"
+        android:layout_width="250dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="25dp"
+        android:textAlignment="center"
+        android:background="@drawable/round_editext"
+        android:ems="10"
+        android:layout_gravity="center"
+        android:inputType="textPassword"
+        android:hint="Contraseña"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/contraseñaRepetir"
+        android:fontFamily="sans-serif-black"
+        android:layout_width="250dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="25dp"
+        android:textAlignment="center"
+        android:background="@drawable/round_editext"
+        android:ems="10"
+        android:layout_gravity="center"
+        android:inputType="textPassword"
+        android:hint="Repetir contraseña"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/btnIniciarSesion"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/round_editext"
+        android:fontFamily="sans-serif-black"
+        android:text="Crear cuenta"
+        android:textColor="@color/black"/>
+
+</LinearLayout>
