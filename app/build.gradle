@@ -16,7 +16,9 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
-
+    task wrapper(type: Wrapper){
+        gradleVersion = '7.2'
+    }
     buildTypes {
         release {
             minifyEnabled false

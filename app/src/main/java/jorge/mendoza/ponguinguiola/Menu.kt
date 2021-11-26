@@ -22,19 +22,19 @@ class Menu : AppCompatActivity() {
             startActivity(intent)
         }
         perfil.setOnClickListener {
-            var intent: Intent = Intent(this, RegistrarseActivity::class.java)
+            var intent: Intent = Intent(this, MiPerfilActivity::class.java)
             startActivity(intent)
         }
         realizarDonativo.setOnClickListener {
-            var intent: Intent = Intent(this, RegistrarseActivity::class.java)
+            var intent: Intent = Intent(this, DonacionActivity::class.java)
             startActivity(intent)
         }
         estadoCuenta.setOnClickListener {
-            var intent: Intent = Intent(this, RegistrarseActivity::class.java)
+            var intent: Intent = Intent(this, EstadoCuentaActivity::class.java)
             startActivity(intent)
         }
         misDonaciones.setOnClickListener {
-            var intent: Intent = Intent(this, RegistrarseActivity::class.java)
+            var intent: Intent = Intent(this, MisDonacionesActivity::class.java)
             startActivity(intent)
         }
 
